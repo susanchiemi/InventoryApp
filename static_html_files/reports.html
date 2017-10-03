@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="../src/index.css">
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Reports</title>
+  </head>
+  <body>
+
+      <div class="container">
+          <div class="header clearfix">
+            <br/>
+                <nav>
+                  <ul class="nav nav-pills pull-right">
+                      <li role="presentation" class="active"><a href="#">Logout</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <br/>
+              <nav>
+                <ul class="nav nav-pills pull-left">
+                    <li role="presentation"><a href="..\static_html_files\deliverables.html">Deliverables</a></li>
+                    <li role="presentation"><a href="..\static_html_files\login.html">Login Page</a></li>
+                    <li role="presentation"><a href="..\static_html_files\reports.html">Report Page</a></li>
+
+                </ul>
+              </nav>
+            <div class="jumbotron">
+            <h3>Download Custom Report</h3>
+            <hr/>
+            <br/>
+
+
+            <div class="row marketing">
+                <div class="col-lg-12">
+                  <h4>Generate Final Report</h4>
+                  <p>This button will generate the Final Report. Data from Amazon.</p>
+                    
+                  <ul>
+                    <li>SKU: Data From Amazon</li>
+                    <li>FBA Inventory (1st Col Fulfillable Quantity) Data From Amazon</li>
+                    <li>All Sales For the Last 30 Days (2nd Col in report: Sold Last 4 Weeks) Data From Amazon</li>
+                    <li>All Sales For 15 Days  (3rd Col in report: Sold Last 2 Weeks) Data From Amazon</li>
+                    <li>All Sales For 7 Days (4th Col in report: Sold Last 1 Week) Data From Amazon</li>
+                    <li><strong>(5th Col Highest Ave) This is will be caculated from 2nd - 4th col above</strong></li>
+                    <li>(6th - 9th Col) Reserved, Working, Inbound, Receiving: Data From Amazon</li>
+                    <li><strong>(Last Col) Outbound will be calculated from Highest Ave Col x 4 (check with Jose)</strong></li>
+                  </ul>
+                  <button type="submit" class="btn btn-lg btn-warning">Generate Report</button>
+                  <p>This report can take up to 10 minutes - show spinning wheel.</p>
+                  <div class="margin-bottom-60"></div>               
+                </div>
+                <div class="container">
+                  <p>Once report is generated - shows up below as html table</p>
+                  <img src="inventoryFinalImage.png" class="report-image">
+                </div>
+               
+               
+
+                <div class="col-lg-12">
+                  <!-- <h4>Subheading</h4> -->
+                  <br/>
+                  <p>Export Table above (Data) as CVS file to computer</p>
+                  <button type="submit" class="btn btn-lg btn-warning">Download File</button>
+               </div>
+              </div>
+                </div>
+             </div>
+        
+        </div>  <!--  end container -->
+    
+<!--link to Javascript -->
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover {
+  color: #fff;
+  background-color: #0066CC;
+}
+
+a a:focus, a:hover {
+  color: #0066CC; 
+}
+
+/*added for static html*/
+.margin-bottom-60 {
+  margin-bottom: 60px;
+}
+
+.report-image {
+  width: 980px;
+}
